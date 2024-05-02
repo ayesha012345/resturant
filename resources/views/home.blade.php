@@ -87,9 +87,12 @@ https://templatemo.com/tm-558-klassy-cafe
                             @if (Route::has('login'))
                             <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                                 @auth
-                                    <a href="{{ url('/dashboard') }}"
-                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20]"
-                                    >Dashboard</a>
+                                   <li>
+                                    <x-app-layout>
+   
+                                    </x-app-layout>
+                                    
+                                   </li>
                                 @else
                                  <li>   <a href="{{ route('login') }}"
                                         class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20]"
@@ -103,13 +106,14 @@ https://templatemo.com/tm-558-klassy-cafe
                                         </a></li>
                                     @endif
                                 @endauth
-                            </div>
+                            
                         @endif
                         </li>
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
+                    </div>
                         <!-- ***** Menu End ***** -->
                     </nav>
                 </div>
